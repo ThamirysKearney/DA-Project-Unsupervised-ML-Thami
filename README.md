@@ -66,7 +66,7 @@ cd mushroom-unsupervised-ml
 pip install -r requirements.txt
 
 # 3. Abrir el notebook
-jupyter notebook notebooks/mushroom_analysis.ipynb
+jupyter notebook notebooks/workshop_clustering_pca.ipynb
 ```
 
 ---
