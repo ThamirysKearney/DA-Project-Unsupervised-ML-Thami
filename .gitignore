@@ -1,52 +1,50 @@
-# ==============================================
-# .gitignore — Proyecto ML No Supervisado
-# ==============================================
-
-# --- Entornos virtuales ---
-venv/
-env/
-.env/
-.venv/
-
-# --- Python ---
+# 🐍 Python
 __pycache__/
 *.py[cod]
-*.pyo
-*.pyd
-*.egg-info/
-dist/
+*$py.class
+*.so
+.Python
+env/
 build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
 
-# --- Jupyter Notebooks ---
-.ipynb_checkpoints/
-*.ipynb_checkpoints
+# 📓 Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+checkpoint_*.ipynb
+.virtual_documents/
 
-# --- Datos (no subir datos crudos pesados a Git) ---
-# Descomenta si el dataset es grande:
-# data/raw/
-# data/processed/
+# 📊 Data & Reports (Ignorar archivos grandes o temporales)
+data/processed/*.csv
+!data/processed/.gitkeep
+reports/*.html
+reports/*.png
 
-# --- Variables de entorno y secretos ---
-.env
-*.env
-secrets.yaml
-
-# --- IDEs y editores ---
+# ⚙️ VS Code & IDEs
 .vscode/
 .idea/
 *.swp
 *.swo
 
-# --- Sistema operativo ---
+# 🧪 Entornos Virtuales
+.env
+.venv
+venv/
+ENV/
+
+# 📂 Sistema
 .DS_Store
 Thumbs.db
-desktop.ini
-
-# --- Reportes temporales ---
-*.log
-*.tmp
-
-# --- Modelos guardados (pueden ser pesados) ---
-*.pkl
-*.joblib
-*.h5

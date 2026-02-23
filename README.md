@@ -28,17 +28,14 @@ Este proyecto fue construido como taller de aprendizaje para nivel junior profes
 ## 🗂️ Estructura del Repositorio
 
 ```
-mushroom-unsupervised-ml/
-├── data/
-│   ├── raw/            ← Dataset original descargado, nunca modificado
-│   └── processed/      ← Dataset tras limpieza y encoding
-├── notebooks/          ← Jupyter Notebook principal del análisis
-├── src/                ← Funciones auxiliares reutilizables
-├── reports/            ← Gráficas exportadas y métricas
-├── webapp/             ← Roadmap del dashboard web (fase futura)
+thamirys-mushroom-ml/
+├── data/               ← Raw y Processed datasets
+├── notebooks/          ← Notebook principal re-estructurado
+├── reports/            ← Gráficos de PCA y matrices
+├── scripts/            ← Utilidades de automatización
+├── webapp/             ← Estructura para dashboard futuro
 ├── README.md
-├── requirements.txt
-└── .gitignore
+└── requirements.txt
 ```
 
 ---
@@ -47,11 +44,10 @@ mushroom-unsupervised-ml/
 
 | Librería | Uso |
 |---|---|
-| `pandas` | Carga y manipulación de datos |
-| `numpy` | Operaciones numéricas |
-| `matplotlib` / `seaborn` | Visualización |
-| `scikit-learn` | PCA, KMeans, Random Forest, métricas |
-| `ucimlrepo` | Descarga directa del dataset UCI |
+| `pandas` | Manipulación de datos categóricos |
+| `scikit-learn` | PCA, KMeans, Random Forest, KNN Imputer |
+| `plotly` | Visualizaciones 3D interactivas |
+| `seaborn` | EDA y Mapas de calor (Cramer's V) |
 
 ---
 
@@ -71,37 +67,31 @@ jupyter notebook notebooks/workshop_clustering_pca.ipynb
 
 ---
 
-## 📊 Flujo del Análisis
+## 📊 Flujo del Análisis (Sincronizado con Notebook)
 
-```
-Carga de datos → EDA → Preprocesamiento → PCA → Random Forest → KMeans → Comparación
-```
-
-1. **EDA**: Exploración univariada y bivariada de 22 variables categóricas
-2. **Preprocesamiento**: Tratamiento de nulos + One-Hot Encoding
-3. **PCA**: Reducción de dimensionalidad y visualización 2D
-4. **Random Forest**: Modelo supervisado base + evaluación con PCA
-5. **KMeans**: Clustering no supervisado + método del codo
-6. **Comparación**: Clusters vs clases reales (Adjusted Rand Index)
+1.  **Setup y Carga**: Configuración de entorno y constantes.
+2.  **EDA (Análisis Exploratorio)**: Detección de nulos reales con `?` y análisis de correlación categórica (**V de Cramer**).
+3.  **Preprocesamiento**: Imputación por **KNN**, One-Hot Encoding y escalado de datos.
+4.  **PCA**: Reducción de dimensiones y visualización dinámica en **3D**.
+5.  **Benchmark (Random Forest)**: Evaluación de precisión mediante Train/Test Split y **Matriz de Confusión**.
+6.  **Clustering (KMeans)**: Búsqueda del **K óptimo (Codo)** y validación contra etiquetas reales (98.8% acierto).
+7.  **Conclusiones**: Lecciones aprendidas sobre la separabilidad natural de los datos.
 
 ---
 
-## 📉 Limitaciones del Proyecto
+## 📉 Conclusiones y Limitaciones
 
-Ver sección dedicada al final del notebook con análisis de:
-- Limitaciones de One-Hot Encoding en datasets categóricos
-- Limitaciones de PCA sobre variables binarias
-- Limitaciones de KMeans (sensibilidad a inicialización, asume clusters esféricos)
-- Riesgo de sobreajuste en Random Forest
-- Mejoras futuras: UMAP, DBSCAN
+- **Separabilidad**: El dataset presenta una estructura geométrica tan clara que un modelo no supervisado distingue la toxicidad casi a la perfección.
+- **PCA**: Vital para entender que el dataset no es ruido, sino grupos densos en el espacio multidimensional.
+- **Limitaciones**: Sensibilidad de KMeans a la inicialización y pérdida de información inherente a la reducción de dimensiones.
 
 ---
 
-## 🔮 Roadmap — Fase Futura
+## 🔮 Roadmap — Próximos Pasos
 
-- [ ] Dashboard web interactivo (HTML + CSS + JS)
-- [ ] Visualización de clusters en tiempo real
-- [ ] Filtros por variable para exploración interactiva
+- [ ] Despliegue de un **Dashboard Interactivo** con Plotly Dash o Streamlit.
+- [ ] Implementación de modelos adicionales como **UMAP** o **DBSCAN**.
+- [ ] Exportación del modelo final como API (FastAPI).
 
 ---
 
