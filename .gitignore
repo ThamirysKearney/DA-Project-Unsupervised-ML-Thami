@@ -1,50 +1,45 @@
-# 🐍 Python
+# Archivo de exclusion de Git - Taller de Machine Learning
+# Define que archivos y carpetas no deben subirse al repositorio para mantenerlo limpio y seguro.
+
+# ARCHIVOS DE PYTHON Y COMPILACION
+# Ignora caches de ejecucion y archivos temporales de Python.
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
-env/
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
 
-# 📓 Jupyter Notebook
+# JUPYTER NOTEBOOK Y ENTORNOS VIRTUALES
+# Ignora carpetas temporales de Jupyter y entornos virtuales locales para evitar redundancia.
 .ipynb_checkpoints
 */.ipynb_checkpoints/*
 checkpoint_*.ipynb
 .virtual_documents/
+env/
+venv/
+.env
+.venv
+ENV/
 
-# 📊 Data & Reports (Ignorar archivos grandes o temporales)
+# DATOS Y REPORTES
+# Protege los datos procesados y graficos generados para que cada usuario los cree localmente.
 data/processed/*.csv
 !data/processed/.gitkeep
 reports/*.html
 reports/*.png
+reports/*.jpg
 
-# ⚙️ VS Code & IDEs
+# CONFIGURACION DE IDE Y SISTEMA
+# Evita subir configuraciones personales de VS Code u otros editores.
 .vscode/
 .idea/
 *.swp
 *.swo
-
-# 🧪 Entornos Virtuales
-.env
-.venv
-venv/
-ENV/
-
-# 📂 Sistema
 .DS_Store
 Thumbs.db
+
+# DISTRIBUCION Y CONSTRUCCION
+# Ignora carpetas de construccion y empaquetado si se llegaran a crear.
+build/
+dist/
+*.egg-info/

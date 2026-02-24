@@ -1,0 +1,3 @@
+REPORTE 1: ASOCIACIONES CATEGORICAS
+Insight: Se observa una fuerte asociacion entre 'odor' y 'class' (toxicidad).
+Grafica: Mapa de calor que muestra la fuerza de relacion (0 a 1) entre variables discretas.

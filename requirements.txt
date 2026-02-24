@@ -1,20 +1,29 @@
-# Entorno de Desarrollo - Taller ML No Supervisado
-# 🍄 UCI Mushroom Dataset
+# Lista de dependencias del proyecto - Taller de Machine Learning No Supervisado
+# Este archivo contiene todas las librerias necesarias para ejecutar el notebook y los scripts.
 
-# Manipulación y Análisis
+# MANIPULACION Y ANALISIS DE DATOS
+# Pandas es fundamental para la carga y limpieza de datos estructurados (DataFrames).
+# Numpy proporciona soporte para vectores y matrices, esencial para calculos numericos.
 pandas==2.1.1
 numpy==1.26.0
 
-# Aprendizaje Automático
+# CIENCIA DE DATOS Y MACHINE LEARNING
+# Scikit-learn incluye algoritmos de preprocesamiento, PCA, KMeans y Random Forest.
+# Scipy se utiliza para calculos estadisticos avanzados como la V de Cramer.
 scikit-learn==1.3.1
 scipy==1.11.3
 
-# Visualización
+# VISUALIZACION DE DATOS
+# Matplotlib es la libreria base para graficos en Python.
+# Seaborn simplifica la creacion de graficos estadisticos atractivos.
+# Plotly permite la generacion de visualizaciones 3D interactivas.
 matplotlib==3.8.0
 seaborn==0.13.0
 plotly==5.17.0
 
-# Utilidades
+# UTILIDADES Y ACCESO A DATOS
+# Ucimlrepo permite descargar el dataset directamente desde el repositorio de la UCI.
+# Jupyter e Ipykernel son necesarios para ejecutar y gestionar el cuaderno de notas.
 ucimlrepo==0.0.3
 jupyter==1.0.0
 ipykernel==6.25.2
