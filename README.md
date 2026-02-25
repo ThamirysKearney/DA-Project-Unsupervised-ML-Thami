@@ -34,7 +34,7 @@ Este proyecto fue construido como un taller de aprendizaje para nivel junior pro
 <h2 align="center">Estructura del Repositorio</h2>
 
 ```text
-thamirys-mushroom-ml/
+DA-Project-Unsupervised-ML-Thami/
 ├── data/               <-- Datasets originales y procesados
 ├── notebooks/          <-- Cuaderno principal con el analisis paso a paso
 ├── reports/            <-- Graficos exportados e insights tecnicos
