@@ -1,6 +1,6 @@
 [
  {
-  "_comentario_humano": "Este archivo contiene la estructura técnica de los encabezados del notebook. Sirve para facilitar la navegación y organización del proyecto de forma automatizada por herramientas de análisis."
+  "* NOTA": "Este archivo contiene la estructura técnica de los encabezados del notebook. Sirve para facilitar la navegación y organización del proyecto de forma automatizada por herramientas de análisis."
  },
  {
   "cell_index": 0,
