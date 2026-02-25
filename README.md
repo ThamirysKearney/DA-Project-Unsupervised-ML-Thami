@@ -55,6 +55,7 @@ DA-Project-Unsupervised-ML-Thami/
 | **Plotly** | Generación de visualizaciones 3D dinámicas e interactivas. |
 | **Seaborn** | Análisis exploratorio (EDA) y cálculo de correlaciones (Cramer's V). |
 | **Scipy** | Pruebas estadísticas y métricas de asociación. |
+| **JSON (Headers)** | Mapeo técnico de secciones para navegación técnica. |
 
 ---
 
