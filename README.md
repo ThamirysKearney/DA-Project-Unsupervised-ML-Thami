@@ -62,8 +62,8 @@ thamirys-mushroom-ml/
 
 ```bash
 # 1. Clonar el repositorio
-git clone <url-del-repo>
-cd thamirys-mushroom-ml
+git clone https://github.com/ThamirysKearney/DA-Project-Unsupervised-ML-Thami.git
+cd DA-Project-Unsupervised-ML-Thami
 
 # 2. Instalar las dependencias listadas
 pip install -r requirements.txt
