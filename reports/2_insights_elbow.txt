@@ -1,3 +1,0 @@
-REPORTE 2: OPTIMIZACION DE CLUSTERS
-Insight: El 'codo' se hace evidente en K=2, validando la separacion natural de toxicidad.
-Grafica: Relacion entre numero de grupos y cohesion interna (inercia).

@@ -1,4 +1,0 @@
-REPORTE 3: RENDIMIENTO DEL MODELO
-Adjusted Rand Index (ARI): 0.5213
-Insight: El clustering no supervisado casi replica perfectamente la toxicidad real.
-Grafica: Espacio PCA de 2D mostrando la agrupacion fisica de las muestras.
