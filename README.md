@@ -93,6 +93,12 @@ jupyter notebook notebooks/workshop_clustering_pca.ipynb
 - **PCA**: Resultó vital para comprender que el dataset no es ruido, sino grupos densos en un espacio multidimensional.
 - **Limitaciones**: Sensibilidad de KMeans a la inicialización y pérdida inevitable de información al reducir dimensiones.
 
+### Resumen Estadístico Final
+| Métrica | Resultado |
+| :--- | :--- |
+| **Precisión Clustering** | 98.8% |
+| **Componentes PCA** | 95% varianza en 20 comps |
+
 ---
 
 <h2 align="center">Roadmap — Próximos Pasos</h2>
